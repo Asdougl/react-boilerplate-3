@@ -3,10 +3,13 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/react",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
@@ -17,7 +20,8 @@
     "no-warning-comments": [
       2,
       { "terms": ["TODO", "FIXME"], "location": "start" }
-    ]
+    ],
+    "no-console": 1
   },
   "settings": {
     "react": {
